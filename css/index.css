@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,9 +46,52 @@ table {
 	border-spacing: 0;
 }
 
+
+/*Universal Selector Below*/
+
 * {
     box-sizing: border-box;
 }
+
+
+/*Logo Nav Styling Below*/
+
+.logonav{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
+
+}
+
+
+.nav{
+    display: flex;
+    margin-top: auto;
+    width: 67%;
+}
+
+
+
+header nav{
+    margin-left: 10%;
+    width: 270%;    
+}
+header nav a{
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+/*Header Image Styling Below*/
+
+.headerimg{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
 
 html, body {
     height: 100%;
@@ -94,6 +136,7 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
+/* Box Style Challenge Below*/
 
 .middle-content .boxes {
     display: flex;
@@ -111,6 +154,47 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+div.boxes .box:first-child{
+    background-color: teal;
+}
+
+div.boxes .box:nth-child(2){
+    background-color: gold;
+}
+
+div.boxes .box:nth-child(3){
+    background-color: cadetblue;
+}
+
+div.boxes .box:nth-child(4){
+    background-color: coral;
+}
+
+div.boxes .box:nth-child(5){
+    background-color: crimson;
+}
+
+div.boxes .box:nth-child(6){
+    background-color: forestgreen;
+}
+
+div.boxes .box:nth-child(7){
+    background-color: darkorchid;
+}
+
+div.boxes .box:nth-child(8){
+    background-color: hotpink;
+}
+
+div.boxes .box:nth-child(9){
+    background-color: indigo;
+}
+
+div.boxes .box:last-child{
+    background-color: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -143,4 +227,52 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*ABOUT PAGE STYLING BELOW*/
+/*About Header Styling */
+.aboutheadertxt{
+    border-bottom: 2px dotted;
+}
+
+.aboutheadertxt p{
+    margin-bottom: 2.5%;
+}
+
+/*About Gallery Styling Below*/
+
+div.galleryflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+div.galleryflex div{
+    margin: 5% 1.5%;
+    max-width: 350px;
+    border-bottom: 2px dotted black;
+}
+.galleryflex img{
+    margin-bottom: 3%;
+}
+
+
+.galleryflex a{
+    display: inline-block;
+    margin: 5% 0;
+    border: 2px solid black;
+    padding: 3% 6%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/*footer Styling*/
+
+.worktogether{
+    margin: 3% 0;
+    width: 100%;
 }
